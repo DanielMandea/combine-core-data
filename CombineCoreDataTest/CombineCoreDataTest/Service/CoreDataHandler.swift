@@ -2,7 +2,7 @@
 //  CoreDataService.swift
 //  CombineCoreDataTest
 //
-//  Created by Andrei Guta on 26/11/2020.
+//  Created by Sima Vlad Grigore on 26/11/2020.
 //  Copyright © 2020 Sima Vlad Grigore. All rights reserved.
 //
 
