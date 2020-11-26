@@ -14,6 +14,10 @@
 		B828F17725684EDF00EEE347 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B828F17625684EDF00EEE347 /* Assets.xcassets */; };
 		B828F17A25684EDF00EEE347 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B828F17925684EDF00EEE347 /* Preview Assets.xcassets */; };
 		B828F17D25684EDF00EEE347 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B828F17B25684EDF00EEE347 /* LaunchScreen.storyboard */; };
+		B828F186256ADDEF00EEE347 /* AddCoreDataPublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = B828F185256ADDEF00EEE347 /* AddCoreDataPublisher.swift */; };
+		B828F188256ADE3900EEE347 /* CoreDataTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = B828F187256ADE3900EEE347 /* CoreDataTypes.swift */; };
+		B828F18A256ADE7E00EEE347 /* AddCoreDataSubscription.swift in Sources */ = {isa = PBXBuildFile; fileRef = B828F189256ADE7E00EEE347 /* AddCoreDataSubscription.swift */; };
+		B828F18C256ADFF900EEE347 /* AddCoreDataSubscriber.swift in Sources */ = {isa = PBXBuildFile; fileRef = B828F18B256ADFF900EEE347 /* AddCoreDataSubscriber.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,10 @@
 		B828F17925684EDF00EEE347 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B828F17C25684EDF00EEE347 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B828F17E25684EDF00EEE347 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B828F185256ADDEF00EEE347 /* AddCoreDataPublisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCoreDataPublisher.swift; sourceTree = "<group>"; };
+		B828F187256ADE3900EEE347 /* CoreDataTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataTypes.swift; sourceTree = "<group>"; };
+		B828F189256ADE7E00EEE347 /* AddCoreDataSubscription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCoreDataSubscription.swift; sourceTree = "<group>"; };
+		B828F18B256ADFF900EEE347 /* AddCoreDataSubscriber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCoreDataSubscriber.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +66,7 @@
 		B828F16C25684ED600EEE347 /* CombineCoreDataTest */ = {
 			isa = PBXGroup;
 			children = (
+				B828F184256ADC2F00EEE347 /* Service */,
 				B828F16D25684ED600EEE347 /* AppDelegate.swift */,
 				B828F16F25684ED600EEE347 /* SceneDelegate.swift */,
 				B828F17425684ED700EEE347 /* ContentView.swift */,
@@ -76,6 +85,17 @@
 				B828F17925684EDF00EEE347 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B828F184256ADC2F00EEE347 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				B828F187256ADE3900EEE347 /* CoreDataTypes.swift */,
+				B828F185256ADDEF00EEE347 /* AddCoreDataPublisher.swift */,
+				B828F189256ADE7E00EEE347 /* AddCoreDataSubscription.swift */,
+				B828F18B256ADFF900EEE347 /* AddCoreDataSubscriber.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,9 +169,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B828F18A256ADE7E00EEE347 /* AddCoreDataSubscription.swift in Sources */,
+				B828F188256ADE3900EEE347 /* CoreDataTypes.swift in Sources */,
 				B828F16E25684ED600EEE347 /* AppDelegate.swift in Sources */,
 				B828F17325684ED700EEE347 /* CombineCoreDataTest.xcdatamodeld in Sources */,
 				B828F17525684ED700EEE347 /* ContentView.swift in Sources */,
+				B828F186256ADDEF00EEE347 /* AddCoreDataPublisher.swift in Sources */,
+				B828F18C256ADFF900EEE347 /* AddCoreDataSubscriber.swift in Sources */,
 				B828F17025684ED600EEE347 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
