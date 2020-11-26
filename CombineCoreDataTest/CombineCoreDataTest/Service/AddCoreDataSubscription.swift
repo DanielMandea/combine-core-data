@@ -23,7 +23,17 @@ final class AddCoreDataSubscription<S: Subscriber>: Subscription where S.Failure
     func request(_ demand: Subscribers.Demand) {
         guard demand > 0 else { return }
         
-        // introduce CoreData magic
+        guard self.context.hasChanges else {
+            self.subscriber?.receive(completion: .finished)
+            return
+        }
+        
+        do {
+            try self.context.save()
+            self.subscriber?.receive(completion: .finished)
+        } catch let error {
+            self.subscriber?.receive(completion: .failure(error))
+        }
     }
     
     func cancel() {
