@@ -8,12 +8,12 @@
 
 import CoreData
 
-final class CoreDataService {
+final class CoreDataHandler {
     // MARK: - Properties
     let persistenceContainer: NSPersistentContainer
     let mainContext: NSManagedObjectContext
     
-    private static var sharedDatabaseService: CoreDataService {
+    private static var sharedDatabaseService: CoreDataHandler {
         let container = NSPersistentContainer(name: "CombineCoreDataTest")
         container.loadPersistentStores { (storeDescription, error) in
             if let error = error as NSError? {
@@ -21,7 +21,7 @@ final class CoreDataService {
             }
         }
         
-        return CoreDataService(persistenceContainer: container, mainContext: container.viewContext)
+        return CoreDataHandler(persistenceContainer: container, mainContext: container.viewContext)
     }
     
     // MARK: - Init
@@ -30,7 +30,7 @@ final class CoreDataService {
         self.mainContext = mainContext
     }
     
-    static func shatedInstance() -> CoreDataService {
+    static func shatedInstance() -> CoreDataHandler {
         return sharedDatabaseService
     }
 }

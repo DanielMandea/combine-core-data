@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		47F39A91256FF9AA00DA28AD /* CoreDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F39A90256FF9AA00DA28AD /* CoreDataService.swift */; };
+		47F39A91256FF9AA00DA28AD /* CoreDataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F39A90256FF9AA00DA28AD /* CoreDataHandler.swift */; };
 		B828F16E25684ED600EEE347 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B828F16D25684ED600EEE347 /* AppDelegate.swift */; };
 		B828F17025684ED600EEE347 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B828F16F25684ED600EEE347 /* SceneDelegate.swift */; };
 		B828F17325684ED700EEE347 /* CombineCoreDataTest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B828F17125684ED700EEE347 /* CombineCoreDataTest.xcdatamodeld */; };
@@ -22,7 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		47F39A90256FF9AA00DA28AD /* CoreDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataService.swift; sourceTree = "<group>"; };
+		47F39A90256FF9AA00DA28AD /* CoreDataHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataHandler.swift; sourceTree = "<group>"; };
 		B828F16A25684ED600EEE347 /* CombineCoreDataTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CombineCoreDataTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B828F16D25684ED600EEE347 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B828F16F25684ED600EEE347 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -96,7 +96,7 @@
 				B828F185256ADDEF00EEE347 /* AddCoreDataPublisher.swift */,
 				B828F189256ADE7E00EEE347 /* AddCoreDataSubscription.swift */,
 				B828F18B256ADFF900EEE347 /* AddCoreDataSubscriber.swift */,
-				47F39A90256FF9AA00DA28AD /* CoreDataService.swift */,
+				47F39A90256FF9AA00DA28AD /* CoreDataHandler.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -179,7 +179,7 @@
 				B828F17525684ED700EEE347 /* ContentView.swift in Sources */,
 				B828F186256ADDEF00EEE347 /* AddCoreDataPublisher.swift in Sources */,
 				B828F18C256ADFF900EEE347 /* AddCoreDataSubscriber.swift in Sources */,
-				47F39A91256FF9AA00DA28AD /* CoreDataService.swift in Sources */,
+				47F39A91256FF9AA00DA28AD /* CoreDataHandler.swift in Sources */,
 				B828F17025684ED600EEE347 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
