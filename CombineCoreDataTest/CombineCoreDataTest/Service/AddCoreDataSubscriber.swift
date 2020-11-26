@@ -23,7 +23,7 @@ final class AddCoreDataSubscriber<Input, Failure: Error>: Subscriber, Cancellabl
     
     // MARK: - Public Methods
     func receive(subscription: Subscription) {
-        self.subscription?.request(.unlimited)
+        subscription.request(.unlimited)
         self.subscription = subscription
     }
     
